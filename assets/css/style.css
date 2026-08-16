@@ -142,6 +142,34 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
 .section { padding-block: clamp(3.5rem, 7vw, 6.5rem); }
 .section-alt { background: var(--bg-alt); }
 
+.section-dots { position: relative; overflow: hidden; }
+.section-dots::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--gridline) 1px, transparent 1px);
+  background-size: 26px 26px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.section-dots > * { position: relative; z-index: 1; }
+
+.section-glow { position: relative; overflow: hidden; }
+.section-glow::after {
+  content: '';
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: var(--ember-glow);
+  filter: blur(100px);
+  opacity: 0.4;
+  top: -160px;
+  inset-inline-end: -120px;
+  pointer-events: none;
+}
+.section-glow > .container { position: relative; z-index: 1; }
+
 .section-head { max-width: 640px; margin-inline: auto; text-align: center; margin-bottom: clamp(2.5rem, 5vw, 3.5rem); }
 .eyebrow {
   display: inline-flex;
