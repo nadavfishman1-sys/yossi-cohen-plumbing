@@ -481,13 +481,15 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
    WORK SHOWCASE
    ========================================================================== */
 .work-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
 }
-@media (min-width: 720px) { .work-grid { grid-template-columns: repeat(3, 1fr); } }
 
 .work-card {
+  width: 100%;
+  max-width: 280px;
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--gridline);
@@ -501,7 +503,7 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
   aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
-  filter: url(#photo-sharpen) saturate(1.08) contrast(1.06);
+  filter: url(#photo-sharpen) saturate(1.1) contrast(1.08);
 }
 .work-card figcaption {
   padding: 1rem 1.25rem;
