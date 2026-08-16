@@ -415,9 +415,18 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.1rem;
+  gap: 1.4rem;
   text-align: center;
 }
+.quick-contact-inner .eyebrow {
+  font-size: clamp(1.35rem, 3.2vw, 1.7rem);
+  font-weight: 700;
+  color: var(--ink);
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 0;
+}
+.quick-contact-inner .eyebrow::before { width: 10px; height: 10px; }
 
 /* ==========================================================================
    SERVICES
