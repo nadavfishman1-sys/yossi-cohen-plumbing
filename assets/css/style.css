@@ -7,10 +7,10 @@
 /* ---------- Tokens ---------- */
 :root {
   /* Brand palette */
-  --ember: #ff4d00;
-  --ember-dark: #e04600;
-  --ember-glow: #fcddcc;
-  --ember-wash: #febec2;
+  --ember: #f59e0b;
+  --ember-dark: #d9820a;
+  --ember-glow: #fdecc8;
+  --ember-wash: #fed7aa;
 
   --gridline: #e5e7eb;
   --ink: #262626;
