@@ -174,19 +174,19 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
 .eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  color: var(--slate);
+  gap: 0.6rem;
+  color: var(--ink);
   font-family: var(--font-mono);
-  font-weight: 500;
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  font-weight: 700;
+  font-size: clamp(1.35rem, 3.2vw, 1.7rem);
+  letter-spacing: normal;
+  text-transform: none;
   margin-bottom: 0.9rem;
 }
 .eyebrow::before {
   content: '';
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: var(--ember);
   flex-shrink: 0;
@@ -446,15 +446,7 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
   gap: 1.4rem;
   text-align: center;
 }
-.quick-contact-inner .eyebrow {
-  font-size: clamp(1.35rem, 3.2vw, 1.7rem);
-  font-weight: 700;
-  color: var(--ink);
-  text-transform: none;
-  letter-spacing: normal;
-  margin-bottom: 0;
-}
-.quick-contact-inner .eyebrow::before { width: 10px; height: 10px; }
+.quick-contact-inner .eyebrow { margin-bottom: 0; }
 
 /* ==========================================================================
    SERVICES
