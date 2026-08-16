@@ -3,8 +3,19 @@
 
   /* ---------- Header scroll state ---------- */
   const header = document.getElementById('site-header');
+  let lastScrollY = window.scrollY;
   const onScroll = () => {
-    header.classList.toggle('scrolled', window.scrollY > 12);
+    const y = window.scrollY;
+    header.classList.toggle('scrolled', y > 12);
+
+    const hideThreshold = window.innerHeight / 3;
+    const scrollingDown = y > lastScrollY;
+    if (y > hideThreshold && scrollingDown) {
+      header.classList.add('header-hidden');
+    } else if (!scrollingDown || y <= hideThreshold) {
+      header.classList.remove('header-hidden');
+    }
+    lastScrollY = y;
   };
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
