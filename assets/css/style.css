@@ -370,16 +370,9 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
 }
 .hero-text { color: var(--graphite); font-size: 1.32rem; font-weight: 500; max-width: 54ch; margin-bottom: 2rem; }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.9rem;
-  margin-top: 1.75rem;
-  padding-top: 1.75rem;
-  border-top: 1px solid var(--gridline);
-}
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.9rem; justify-content: center; }
 
-.hero-stats { display: flex; flex-wrap: wrap; gap: 2.25rem; margin-bottom: 0.25rem; }
+.hero-stats { display: flex; flex-wrap: wrap; gap: 2.25rem; }
 .hero-stats li { display: flex; flex-direction: column; gap: 0.3rem; }
 .hero-stat-num { font-weight: 700; font-size: 1.7rem; color: var(--ink); font-family: var(--font-mono); }
 .hero-stat-label { font-size: 0.98rem; font-weight: 600; color: var(--graphite); }
@@ -409,6 +402,22 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
 .hero-card-badge strong { display: block; font-size: 0.95rem; font-weight: 600; }
 .hero-card-badge span { font-size: 0.8rem; color: var(--slate); }
 @media (min-width: 640px) { .hero-card-badge { display: flex; } }
+
+/* ==========================================================================
+   QUICK CONTACT
+   ========================================================================== */
+.quick-contact {
+  background: var(--vellum);
+  border-block: 1px solid var(--gridline);
+  padding-block: 2.25rem;
+}
+.quick-contact-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+  text-align: center;
+}
 
 /* ==========================================================================
    SERVICES
