@@ -210,34 +210,6 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
 .btn-lg { padding: 1.05rem 2rem; font-size: 1.05rem; }
 .btn-xl { padding: 1.3rem 2.4rem; font-size: 1.1rem; }
 .btn-block { width: 100%; }
-
-/* ---------- Badges ---------- */
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-pill);
-  font-weight: 600;
-  font-size: 0.85rem;
-  background: var(--white);
-  border: 1px solid var(--gridline);
-  color: var(--ink);
-}
-.badge-live {
-  background: rgba(255, 77, 0, 0.1);
-  border: 1.5px solid rgba(255, 77, 0, 0.4);
-  color: var(--ember-dark);
-  font-weight: 700;
-  font-size: 1.05rem;
-  padding: 0.75rem 1.4rem;
-  gap: 0.6rem;
-}
-.badge-live .icon { color: var(--ember); width: 22px; height: 22px; animation: badge-pulse 2s ease-in-out infinite; }
-@keyframes badge-pulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.15); opacity: 0.75; }
-}
 /* ==========================================================================
    HEADER
    ========================================================================== */
@@ -350,14 +322,14 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
    ========================================================================== */
 .hero {
   position: relative;
-  padding-top: calc(var(--header-h-mobile) + 3rem);
+  padding-top: calc(var(--header-h-mobile) + 1.25rem);
   padding-bottom: 4rem;
   background: var(--white);
   color: var(--ink);
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  .hero { padding-top: calc(var(--header-h) + 4rem); padding-bottom: 6rem; }
+  .hero { padding-top: calc(var(--header-h) + 1.75rem); padding-bottom: 6rem; }
 }
 
 .hero-bg { position: absolute; inset: 0; z-index: 0; }
