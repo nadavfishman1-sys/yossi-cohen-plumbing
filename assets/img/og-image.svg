@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#e5e7eb"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <circle cx="1050" cy="80" r="220" fill="#fcddcc" opacity="0.5"/>
+
+  <rect x="90" y="240" width="140" height="66" rx="14" fill="#ff4d00"/>
+  <path d="M160 258c5 6 8 10.5 8 14.7 0 5-4 9-8 9s-8-4-8-9c0-4.2 3-8.7 8-14.7z" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <text x="90" y="400" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#262626">יוסי כהן אינסטלציה 24/7</text>
+  <text x="90" y="452" font-family="Arial, sans-serif" font-size="28" font-weight="600" fill="#727272">אינסטלציה · שיפוצים · איטום · מיזוג אוויר</text>
+  <text x="90" y="500" font-family="Arial, sans-serif" font-size="24" fill="#ff4d00">050-235-3225 · נהריה · זמינים 24/7</text>
+</svg>
